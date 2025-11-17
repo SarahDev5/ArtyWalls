@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Page Website</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script> 
+</head>
+<body>
+<nav>
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  <ul id="nav-links">
+    <li ><a href="#home" class="nav-button">Home</a></li>
+    <li><a href="#about" class="nav-button">About</a></li>
+    <li><a href="#gallery" class="nav-button">Gallery</a></li>
+    <li><a href="#contact" class="nav-button">Contact</a></li>
+  </ul>
+</nav>
+  <section id="home">
+    <div id="intro" class="intro">
+  <div class="intro-content">
+    <div class="intro-text">
+      <h1>Welcome to ArtyWalls</h1>
+      <p>
+        Transform Your Space with Bespoke Wallpapering<br>
+        Welcome to a world where walls become canvases and rooms tell stories. At ArtyWalls, we offer a fully bespoke wallpapering service tailored to your space, your style, and your vision. Whether you're refreshing a cozy corner at home or making a bold statement in your business, we’re here to bring your walls to life.
+      </p>
+    </div>
+    <div class="intro-image">
+      <img src="./images/me.jpg" alt="Sarah infront of Wallpaper" />
+    </div>
+  </div>
+</div>
+</section>
+  <section id="about">
+    <h2>How It Works</h2>
+<ul>
+<li>You choose the design: Select from a curated collection or collaborate with us to create something truly one-of-a-kind.</li>
+<li>We measure up: Our team will visit your space to take precise measurements and assess the room’s character.</li>
+
+<li>We hang with care: Professional installation ensures your chosen wallpaper fits perfectly and looks stunning.</li></ul>
+  </section>
+    <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-container"></div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label>Name:<br><input type="text" name="name" required /></label><br>
+      <label>Email:<br><input type="email" name="email" required /></label><br>
+      <label>Message:<br><textarea name="message" rows="5" required></textarea></label><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  <div id="modal" class="modal"><br>
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img" />
+  </div>
+</body>
+</html>
