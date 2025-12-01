@@ -11,6 +11,7 @@ html, body {
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
   background-color: #9db4c1;
+
 }
 
 /* Navigation */
@@ -79,6 +80,14 @@ nav a {
   font-size: 28px;
   color: white;
   cursor: pointer;
+}
+
+.container {
+  max-width: 1000px;       /* controls horizontal size */
+  margin: 0 auto;          /* centers it horizontally */
+  background: rgb(205, 214, 228);       /* main content background */
+  box-shadow: 0 0 20px rgba(0,0,0,0.3); /* shadow behind */
+  padding: 2rem;           /* breathing room inside */
 }
 
 .intro-content {
