@@ -99,6 +99,8 @@ nav a {
   border-radius: 20px;
 }
 
+
+
 /* Responsive layout for smaller screens */
 @media (max-width: 768px) {
   .intro-content {
