@@ -20,9 +20,9 @@ const galleryImages = [
   "./images/peacock_lounge.jpg",
   "./images/dancer.jpg",
   "./images/poppies.jpg",
-  "./images/Sunflowers.jpg",
-  "./images/Zebra.jpg",
-  "./images/Peacock2.jpg",
+  "./images/sunflowerssmall.jpg",
+  "./images/zebra1.jpg",
+  "./images/peacock_2.jpg",
 ];
 
 const galleryContainer = document.querySelector(".gallery-container");
