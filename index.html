@@ -9,14 +9,18 @@
 </head>
 <body>
 <nav>
-  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-  <ul id="nav-links">
-    <li ><a href="#home" class="nav-button">Home</a></li>
-    <li><a href="#about" class="nav-button">About</a></li>
-    <li><a href="#gallery" class="nav-button">Gallery</a></li>
-    <li><a href="#contact" class="nav-button">Contact</a></li>
-  </ul>
+  <div class="nav-container">
+    <img src="./images/logo.png" alt="ArtyWalls Logo" class="logo" />
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul id="nav-links">
+      <li><a href="#home" class="nav-button">Home</a></li>
+      <li><a href="#about" class="nav-button">About</a></li>
+      <li><a href="#gallery" class="nav-button">Gallery</a></li>
+      <li><a href="#contact" class="nav-button">Contact</a></li>
+    </ul>
+  </div>
 </nav>
+
 <div class="container">
   <section id="home">
     <div id="intro" class="intro">
@@ -36,11 +40,24 @@
 </section>
   <section id="about">
     <h2>How It Works</h2>
-<ul>
-<li>You choose the design: Select from a curated collection or collaborate with us to create something truly one-of-a-kind.</li>
-<li>We measure up: Our team will visit your space to take precise measurements and assess the room’s character.</li>
+<div class="cards">
+  <div class="card">
+    <h3>You choose the design</h3>
+    <p>Select from a curated collection or collaborate with us...</p>
+    <img src="./images/selecting (1).png" alt="selecting wallpaper" />
+  </div>
+  <div class="card">
+    <h3>We measure up</h3>
+    <p>Our team will visit your space to take precise measurements...</p>
+    <img src="./images/measuring.png" alt="selecting wallpaper" />
+  </div>
+  <div class="card">
+    <h3>We hang with care</h3>
+    <p>Professional installation ensures your chosen wallpaper fits perfectly...</p>
+    <img src="./images/hanging wallpaper.png.png" alt="selecting wallpaper" />
+  </div>
+</div>
 
-<li>We hang with care: Professional installation ensures your chosen wallpaper fits perfectly and looks stunning.</li></ul>
   </section>
     <section id="gallery">
     <h2>Gallery</h2>
