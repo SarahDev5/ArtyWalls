@@ -16,30 +16,46 @@ html, body {
 .logo {
   height: 70px;
   width: auto;
-  margin-right: 200px;
-  border-radius: 10px;
+  margin-right: 0px;
+  border-radius: 50%;
   background-color: white;
   opacity: .8;
+  box-shadow: #ccc 0px 2px 10px;
+}
+
+
+.decoration {
+  width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  padding-bottom: 10px;
 }
 /* Navigation */
 
 nav {
   display: flex;
-  justify-content: center; /* centers the entire nav content */
+  justify-content: center;       /* centers the entire nav content */
   align-items: center;
-  flex-direction: column; /* stacks logo and links vertically if needed */
+  flex-direction: column;        /* stacks logo and links vertically if needed */
   padding: 20px 100px;
   background: linear-gradient(
-    185deg,                /* diagonal angle */
-    #080e2b,               /* dark blue */
-    #272a37,               /* medium blue */
-    #5fa8d3                /* lighter accent */
+    185deg,
+    #080e2b,                     /* dark blue */
+    #272a37,                     /* medium blue */
+    #5fa8d3                      /* lighter accent */
   );
   position: fixed;
-  top: 0px;
+  top: 0;
   width: 100%;
   z-index: 400;
-  box-shadow: #080e2b 0px 2px 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4); /* softer shadow for depth */
+  border-bottom: 2px solid rgba(255,255,255,0.1); /* subtle divider */
+  backdrop-filter: blur(6px);    /* glassy effect */
+  transition: all 0.4s ease;     /* smooth transitions */
+  border-bottom-left-radius: 100% 40px;
+  border-bottom-right-radius: 100% 40px;
 
 }
 
@@ -63,13 +79,18 @@ nav a {
   font-size: 1rem;
 }
 
+
 .nav-button {
   align-items: center;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
+  text-decoration: none;
+  padding: 10px 15px;
+  color: #f2eaea;
   transition: background-color 0.3s ease;
+  border-radius: 5px;
+
 }
+
+
 
 .nav-button:hover {
   background-color: gray;
@@ -79,13 +100,45 @@ nav a {
 .nav-button.active {
   background-color: rgb(8, 54, 100);
   color: white;
+  border-bottom: 1px solid white; /* precise underline effect */
 }
 
+
+.nav-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+
+
+
+
+.nav-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+
+
+
+
+
+.nav-button:hover {
+  background-color: #ccc;
+  color: white;
+}
+
+.menu-toggle {
+  display: none; /* show only on mobile if needed */
+}
 
 .menu-toggle {
   display: none;
   font-size: 28px;
-  color: white;
+  color: rgb(88, 86, 86);
   cursor: pointer;
 }
 
@@ -95,6 +148,44 @@ nav a {
   background: rgb(205, 214, 228);       /* main content background */
   box-shadow: 0 0 20px rgba(0,0,0,0.3); /* shadow behind */
   padding: 2rem;           /* breathing room inside */
+}
+
+.hero {
+  text-align: center;
+  padding: 0.5rem 2rem;
+  background: #f9f7f4; /* soft neutral */
+  border-radius: 15px;
+}
+
+.hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  color: #1a2a3a; /* deep navy */
+  margin-bottom: 0.5rem;
+}
+
+.hero h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  color: #513dc4; /* terracotta accent */
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero-image {
+  max-width: 100px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  opacity: 0.8;
 }
 
 .intro-content {
@@ -133,7 +224,7 @@ nav a {
 /* Sections */
 section {
   padding: 100px 20px;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 .cards img {
@@ -178,7 +269,7 @@ section {
 /* Gallery */
 .gallery-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 15px;
   padding: 10px;
 }
@@ -269,7 +360,8 @@ form button {
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: #333;
+    background-color: #1e1c1c;
+    margin-top: 10px;
   }
 
   #nav-links.show {
